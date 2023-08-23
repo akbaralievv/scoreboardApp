@@ -1,0 +1,94 @@
+.tableScroll {
+  background: #fff;
+  /* height: 40px; */
+  /* animation: lookBlock1 1s; */
+}
+.tableScroll > div {
+  border: 1px solid #fafafa;
+  border-radius: 8px;
+  text-align: center;
+  color-scheme: light;
+  /* grid-template-rows: 40px 50px 40px; */
+  /* grid-template-rows: fit-content(40%); */
+  margin: 10px 0;
+  /* grid-template-rows: repeat(100, 1fr) !important; */
+  /* grid-template-columns: subgrid !important; */
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.tableScroll > div > div {
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.76);
+  /* line-height: 15px; */
+  /* border: 1px solid #f0f0f0; */
+  border: 1px solid #f0f0;
+}
+
+.tableScroll > div > div > div {
+  line-height: 0;
+  display: block;
+  border: 1px solid #f0f0f0;
+  padding: 20px 16px;
+  margin: 0px 0px;
+  /* background-color: red !important; */
+  box-sizing: initial !important;
+}
+.tableScroll > div > div > div > div {
+  background-color: green !important;
+}
+
+.cellContent {
+  /* padding: 20px !important; */
+  background-color: blue !important;
+}
+
+.tableScroll > div > div > div:first-child {
+  width: 170px;
+  position: sticky !important;
+  z-index: 3 !important;
+  inset-block-start: 30px;
+  top: 0 !important;
+  left: 0 !important;
+  background-color: red !important;
+}
+.tableScroll [role="columnheader"]:first-child{
+  z-index: 4 !important;
+}
+/* .tableScroll > div > div > div:first-child > div:first-child {
+  background-color: blue !important;
+} */
+
+/* @keyframes lookBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* 
+  // const columns = [
+  //   { key: "id", name: "ID", editable: true },
+  //   { key: "title", name: "Title", editable: true },
+  //   { key: "nur", name: "nur", editable: true },
+  //   { key: "din", name: "din", editable: true },
+  //   { key: "din1", name: "din", editable: true },
+  //   { key: "din2", name: "din", editable: true },
+  //   { key: "din3", name: "din", editable: true },
+  //   { key: "din4", name: "din", editable: true },
+  // ];
+
+  // const rows = [
+  //   { id: 0, title: "Example", nur: "rtdfyguhi" },
+  //   { id: 1, title: "Demo" },
+  //   { id: 2, title: "Demo" },
+  //   { id: 3, title: "Demo" },
+  //   { id: 4, title: "Demo" },
+  //   { id: 5, title: "Demo" },
+  //   { id: 6, title: "Demo" },
+  //   { id: 7, title: "Demo" },
+  //   { id: 8, title: "Demo" },
+  // ]; */
